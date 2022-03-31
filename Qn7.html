@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Qn7</title>
+</head>
+<body>
+    
+  users = [
+  { id: 20, name: 'Captain Piett' }, <br>
+   { id: 24, name: 'General Veers'}, <br>
+    { id: 56, name:'Admiral Ozzel'} <br> 
+    { id: 88, name: 'Commander Jerjerrod' }
+    ]
+    <p id="demo"></p>
+
+
+<script>
+
+
+
+var users = [
+   { id: 20, name: 'Captain Piett' }, { id: 24, name: 'General Veers'}, { id: 56, name:
+'Admiral Ozzel'}, 88 ];
+
+
+const index = users.findIndex((element, index) => {
+  if (element.users === 88) {
+    return true
+  }
+})
+
+document.getElementById("demo").innerHTML= users.indexOf(88);
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

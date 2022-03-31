@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    officers = [ { id: 20, name: 'Captain Piett' },
+    <br> { id: 24, name: 'General Veers' }, 
+    <br>{ id: 56, name: 'Admiral Ozzel' }, <br>
+    { id: 88, name: 'Commander Jerjerrod' } ]
+
+    <br>
+        <button onclick="goble()" type="button" name="filter">Filter</button>
+    <script>
+       
+       function goble()
+       {
+        var officers = [ { id: 20, name: 'Captain Piett' }, { id: 24, name: 'General Veers' }, { id: 56,
+name: 'Admiral Ozzel' }, { id: 88, name: 'Commander Jerjerrod' } ];
+
+          
+        var output =  officers.filter(officers => officers.id == "24", officers => officers.name == 'General Veers');
+        for(var i=0;i<output.length;i++){
+            document.write(output[i].id) 
+           document.write( output[i].name)
+        };
+    }
+        </script>
+</body>
+</html>
